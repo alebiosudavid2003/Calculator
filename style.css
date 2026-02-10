@@ -13,7 +13,7 @@ body {
 
 body.dark {
     background: #020617;
-    color: white;
+    color: gray;
 }
 
 body.light {
@@ -73,10 +73,30 @@ button {
     margin-top: 15px;
     max-height: 120px;
     overflow-y: auto;
+    display: none;
 }
 
 .history ul {
     padding-left: 15px;
+}
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clear-history {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.clear-history:hover {
+    background: #dc2626;
 }
 
 
