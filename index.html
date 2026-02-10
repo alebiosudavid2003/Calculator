@@ -10,6 +10,7 @@
       <div class="top">
         <input type="text" id="display" readonly />
         <button class="toggle" onclick="toggleTheme()">🌙</button>
+        <button class="toggle" onclick="toggleHistory()">H</button>
       </div>
 
       <div class="buttons">
@@ -43,17 +44,19 @@
         <button onclick="append(')')">)</button>
         <button onclick="calculate()">=</button>
 
-        <button onclick="append('Math.sqrt(')">√</button>
-        <button onclick="append('**2')">x²</button>
+        <button onclick="append('sqrt(')">√</button>
+        <button onclick="append('sq(')">x²</button>
         <button onclick="append('Math.log10(')">log</button>
-        <button onclick="append('Math.PI')">π</button>
+        <button onclick="append('π')">π</button>
       </div>
 
       <div class="history">
+    <div class="history-header">
         <h3>History</h3>
-        <ul id="history"></ul>
-      </div>
+        <button class="clear-history" onclick="clearHistory()">Clear</button>
     </div>
+    <ul id="history"></ul>
+</div>
 
     <script src="script.js"></script>
   </body>
